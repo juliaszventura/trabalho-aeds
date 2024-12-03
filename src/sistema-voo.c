@@ -169,6 +169,7 @@ void cadastrar_assento() {
     scanf("%d", &status);
 }
 
+//Cadastrar Reserva
 void cadastrar_reserva() {
     Reserva nova_reserva;
     int codigo_voo, numero_assento, codigo_passageiro;
@@ -217,6 +218,40 @@ void cadastrar_reserva() {
     
 }
 
+//Baixa em reserva
+void baixa_reserva() {
+    int codigo_voo, numero_assento;
+    printf("Código do voo: ");
+    scanf("%d", &codigo_voo);
+    printf("Número do assento: ");
+    scanf("%d", &numero_assento);
+
+    int reserva_existe = 0;
+    for (int i = 0; i < qtd_reservas; i++) {
+        if (reservas[i].codigo_voo == codigo_voo) {
+            reserva_existe = 1;
+            
+            for (int j = 0; j < qtd_assentos; j++) {
+                if (assentos[j].codigo_voo == codigo_voo) {
+                    assentos[j].status = 2;
+                    break;
+                }
+            }
+
+            for (int j = i; j < qtd_reservas - 1; j++) {
+                reservas[j] = reservas[j + 1];
+            }
+            qtd_reservas--;
+            break;
+        }
+    }
+
+    if (!reserva_existe) {
+        printf("Reserva não encontrada!\n");
+    } else {
+        printf("Reserva cancelada com sucesso!\n");
+    }
+}
 
 //Pesquisar Passageiro
 void pesquisar_passageiro() {
@@ -288,7 +323,7 @@ void listar_voos() {
 void menu_principal() {
     int opcao;
     do {
-        printf("\n-----Sistema de Cadastro Voo Seguro-----\n");
+        printf("\n--- Sistema de Cadastro Voo Seguro ---\n");
         printf("1 - Cadastrar Passageiro\n");
         printf("2 - Cadastrar Tripulante\n");
         printf("3 - Cadastrar Voo\n");
