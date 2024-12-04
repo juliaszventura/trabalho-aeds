@@ -29,3 +29,17 @@ de tripulação composta por pilotos, copilotos e comissários. Este projeto é 
 - **void cadastrarAssento(Assento assentos[], int * qtdAssentos, Voo voos[], int qtdVoos)** : Empregada no cadastro de um novo assento em um voo. Recebe como parâmetros um vetor de assentos, um ponteiro para a quantidade de assentos cadastrados, um vetor de voos e a quantidade de voos cadastrados.Solicita ao usuário o código do voo e inicializa o status do assento como 0 (vazio).
 Em seguida, a função verifica se o código do voo informado corresponde a algum voo presente no vetor de voos. Caso o voo não seja encontrado, é exibida uma mensagem de erro e o cadastro do assento é interrompido, com a quantidade de assentos sendo ajustada para -1, indicando que ocorreu um erro. Se o voo for encontrado, a função cria um novo assento, atribuindo-lhe o número baseado na quantidade de assentos já cadastrados. O novo assento é então adicionado ao vetor de assentos e a quantidade de assentos qtdAssentos é incrementada.
 Por fim, a função exibe uma mensagem de sucesso, informando o número do novo assento cadastrado ao usuário.
+
+## Evolução das sprints
+
+Abaixo é possível acompanhar a organização das sprints feita apartir do Projects do github.
+
+**Backlog Geral**
+<img src="Sprints/BacklogFeito.png" alt="Backlog geral"/>
+**Sprint 1**
+<img src="Sprints/Sprint1.gif" alt="Sprint 1" style="width: 1714px; height: 883px;" />
+**Sprint 2**
+<img src="Sprints/Sprint2.gif" alt="Sprint 2" style="width: 1714px; height: 883px;" />
+**Sprint 3**
+<img src="Sprints/Sprint3.gif" alt="Sprint 3" style="width: 1714px; height: 883px;" />
+**Sprint 4**<img src="Sprints/BacklogDaSprint4.png" alt="Sprint 4" />
