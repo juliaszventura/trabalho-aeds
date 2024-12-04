@@ -33,6 +33,25 @@ Em seguida, a função verifica se o código do voo informado corresponde a algu
 Por fim, a função exibe uma mensagem de sucesso, informando o número do novo assento cadastrado ao usuário.
 
 
+## MENU
+
+    --------------------------
+    Companhia Aérea Voo Seguro
+    --------------------------
+    1 - Cadastrar Passageiro
+    2 - Cadastrar Tripulante
+    3 - Cadastrar Voo
+    4 - Cadastrar Assento
+    5 - Pesquisar Passageiro
+    6 - Pesquisar Tripulante
+    7 - Fazer Reserva
+    8 - Dar baixa em Reserva
+    9 - Listar Voos do Passageiro
+    0 - Salvar e Sair
+
+* Possivel escolher e navegar pelas diferentes interfaces e funções da aplicação.
+
+
 ## Evolução das sprints
 
 Abaixo é possível acompanhar a organização das sprints feita apartir do Projects do github.
