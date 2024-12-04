@@ -46,4 +46,4 @@ Abaixo é possível acompanhar a organização das sprints feita apartir do Proj
 **Sprint 3**
 <img src="sprints/Sprint 3.png" alt="Sprint 3"/>
 **Sprint 4**
-<img src="sprints/sprint 4.png" alt="Sprint 4"/>
+<img src="sprints/Sprint 4.png" alt="Sprint 4"/>
