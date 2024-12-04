@@ -9,3 +9,7 @@ de tripulação composta por pilotos, copilotos e comissários. Entretanto, mesm
 - _stdlib.h_: Fornece funções empregadas para o controle de fluxo e término do software, manipulação de números e strings e gerenciamento de memória. 
 - _string.h_: Biblioteca utilizada para a manipulação de strings (conjuntos de caracteres).
 - _assert.h_: Biblioteca que permite a verificação de condições durante a execução de um programa. Usada para a manipulação dos casos de teste implementados para o sistema, auxiliando na validação dos testes. 
+
+## Estruturas de Dados
+- **typedef Struct Passageiros**: Utilizada para armazenamento dos dados dos passageiros da companhia aérea Voo Seguro: código, nome, endereço, telefone, e se participa do Programa Fidelidade da Companhia, indicando o número de pontos.
+- **typedef Struct Tripulação**: Utilizada para o armazenamento 
