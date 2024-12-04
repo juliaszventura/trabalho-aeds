@@ -11,5 +11,13 @@ de tripulação composta por pilotos, copilotos e comissários. Entretanto, mesm
 - _assert.h_: Biblioteca que permite a verificação de condições durante a execução de um programa. Usada para a manipulação dos casos de teste implementados para o sistema, auxiliando na validação dos testes. 
 
 ## Estruturas de Dados
-- **typedef Struct Passageiros**: Utilizada para armazenamento dos dados dos passageiros da companhia aérea Voo Seguro: código, nome, endereço, telefone, e se participa do Programa Fidelidade da Companhia, indicando o número de pontos.
-- **typedef Struct Tripulação**: Utilizada para o armazenamento 
+- **typedef struct Passageiros**: Utilizada para armazenamento dos dados dos passageiros da companhia Voo Seguro: código, nome, endereço, telefone, e se participa do Programa Fidelidade da Companhia, indicando o número de pontos.
+- **typedef struct Tripulação**: Utilizada para o armazenamento dos dados dos tripulantes da companhia Voo Seguro: código do tripulante, nome, telefone e cargo(piloto, copiloto ou comissário).
+- **typedef struct Voo**: Armazena as informações dos voos da companhia: código do voo, data e hora, origem, destino, código do avião, tarifa do voo e código do piloto, copiloto e comissários do voo.
+- **typedef struct Assento**: Armazena os dados dos assentos dos voos: código do voo em que o assento está, número do assento e status (livre ou ocupado).
+- **typedef struct Reserva**: Armazena as informações referentes à uma reserva: número do assento reservado, código do voo em que o assento se encontra e código do passageiro que realizou a reserva.
+
+
+##Funções Utilizadas: 
+- ** void CadastrarPassageiro(Passageiro passageiros[], int *qtdPassageiros, 
+
