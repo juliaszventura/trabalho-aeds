@@ -12,12 +12,16 @@ de tripulação composta por pilotos, copilotos e comissários. Entretanto, mesm
 
 ## Estruturas de Dados
 - **typedef struct Passageiros**: Utilizada para armazenamento dos dados dos passageiros da companhia Voo Seguro: código, nome, endereço, telefone, e se participa do Programa Fidelidade da Companhia, indicando o número de pontos.
-- **typedef struct Tripulação**: Utilizada para o armazenamento dos dados dos tripulantes da companhia Voo Seguro: código do tripulante, nome, telefone e cargo(piloto, copiloto ou comissário).
+- **typedef struct Tripulação**: Utilizada para o armazenamento dos dados dos tripulantes da companhia: código do tripulante, nome, telefone e cargo (piloto, copiloto ou comissário).
 - **typedef struct Voo**: Armazena as informações dos voos da companhia: código do voo, data e hora, origem, destino, código do avião, tarifa do voo e código do piloto, copiloto e comissários do voo.
 - **typedef struct Assento**: Armazena os dados dos assentos dos voos: código do voo em que o assento está, número do assento e status (livre ou ocupado).
 - **typedef struct Reserva**: Armazena as informações referentes à uma reserva: número do assento reservado, código do voo em que o assento se encontra e código do passageiro que realizou a reserva.
 
 
 ##Funções Utilizadas: 
-- ** void CadastrarPassageiro(Passageiro passageiros[], int *qtdPassageiros, 
+- **void CadastrarPassageiro(Passageiro passageiros[], int *qtdPassageiros,)** : Função empregada para inclusão de um novo passageiro dentro de um sistema de gerenciamento. Recebe como parâmatros um vetor 'passageiros' do tipo Passageiro e um ponteiro que indica a quantidade de passageiros cadastrados no sistema (*qtdPassageiros). Cria uma nova estrutura 'novoPassageiro' do tipo Passageiro, e atribui um código único a ele. Em seguida, solicita ao usuário que digite o nome, endereço e telefone do passageiro que deseja cadastrar, e  armazena os dados recebidos dentro do 'novoPassageiro' recém criado. Por fim, solicita que o usuário indique se o passageiro cadastrado faz parte do Programa Fidelidade da companhia (teclando 1 caso participe, e 2 caso não participe), e armazena esta informação em 'novoPassageiro'. Após a coleta e armazenamento dos dados, armazena 'novoPassageiro' dentro do vetor passageiros na posição indicada por qtdPassageiros, e incrementa o valor desse contador. Por fim, fornece uma mensagem ao usuário indicando que o cadastro do passageiro foi concluido com sucesso e o código do passageiro cadastrado.
+  
+- **void testarCadastroCliente()** :
+  
+- **void cadastrarTripulacao(Tripulacao tripulantes [], int * qtdTripulantes)** : 
 
