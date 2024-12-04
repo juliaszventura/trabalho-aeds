@@ -33,7 +33,7 @@ Em seguida, a função verifica se o código do voo informado corresponde a algu
 Por fim, a função exibe uma mensagem de sucesso, informando o número do novo assento cadastrado ao usuário.
 
 
-## MENU
+## Menu
 
     --------------------------
     Companhia Aérea Voo Seguro
