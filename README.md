@@ -40,10 +40,10 @@ Abaixo é possível acompanhar a organização das sprints feita apartir do Proj
 **Backlog Geral**
 <img src="sprints/Backlog.png" alt="Backlog geral"/>
 **Sprint 1**
-<img src="sprints/sprint 1.png" alt="Sprint 1" style="width: 1714px; height: 883px;" />
+<img src="sprints/sprin 1.png" alt="Sprint 1"/>
 **Sprint 2**
-<img src="sprints/Sprint 2.png" alt="Sprint 2" style="width: 1714px; height: 883px;" />
+<img src="sprints/Sprint 2.png" alt="Sprint 2"/>
 **Sprint 3**
-<img src="sprints/Sprint 3.png" alt="Sprint 3" style="width: 1714px; height: 883px;" />
+<img src="sprints/Sprint 3.png" alt="Sprint 3"/>
 **Sprint 4**
-<img src="sprints/sprint 4.png" alt="Sprint 4" style="width: 1714px; height: 883px;" />
+<img src="sprints/sprint 4.png" alt="Sprint 4"/>
