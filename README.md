@@ -4,11 +4,13 @@
 A Voo Seguro é uma companhia aérea operante em todo o Brasil, cujo maior objetivo é garantir a satisfação de seus passageiros e promover sua fidelização, contando com uma equipe
 de tripulação composta por pilotos, copilotos e comissários. Este projeto é um sistema desenvolvido em linguagem C a fim de auxiliar a companhia Voo Seguro no gerenciamento, possibilitando o cadastro de passageiros, tripulação e voos da companhia e controle de reservas de assentos e Sistema de Fidelidade da empresa. 
 
+
 ## Bibliotecas Utilizadas
 - _stdio.h_: Biblioteca padrão da linguagem c, fornece funções que executam a entrada e saída de dados no sistema, como o scanf e printf, e manipulação de dados em arquivo.
 - _stdlib.h_: Fornece funções empregadas para o controle de fluxo e término do software, manipulação de números e strings e gerenciamento de memória. 
 - _string.h_: Biblioteca utilizada para a manipulação de strings (conjuntos de caracteres).
 - _assert.h_: Biblioteca que permite a verificação de condições durante a execução de um programa. Usada para a manipulação dos casos de teste implementados para o sistema, auxiliando na validação dos testes. 
+
 
 ## Estruturas de Dados
 - **typedef struct Passageiros**: Utilizada para armazenamento dos dados dos passageiros da companhia Voo Seguro: código, nome, endereço, telefone, e se participa do Programa Fidelidade da Companhia, indicando o número de pontos.
@@ -30,16 +32,18 @@ de tripulação composta por pilotos, copilotos e comissários. Este projeto é 
 Em seguida, a função verifica se o código do voo informado corresponde a algum voo presente no vetor de voos. Caso o voo não seja encontrado, é exibida uma mensagem de erro e o cadastro do assento é interrompido, com a quantidade de assentos sendo ajustada para -1, indicando que ocorreu um erro. Se o voo for encontrado, a função cria um novo assento, atribuindo-lhe o número baseado na quantidade de assentos já cadastrados. O novo assento é então adicionado ao vetor de assentos e a quantidade de assentos qtdAssentos é incrementada.
 Por fim, a função exibe uma mensagem de sucesso, informando o número do novo assento cadastrado ao usuário.
 
+
 ## Evolução das sprints
 
 Abaixo é possível acompanhar a organização das sprints feita apartir do Projects do github.
 
 **Backlog Geral**
-<img src="Sprints/BacklogFeito.png" alt="Backlog geral"/>
+<img src="sprints/Backlog.png" alt="Backlog geral"/>
 **Sprint 1**
-<img src="Sprints/Sprint1.gif" alt="Sprint 1" style="width: 1714px; height: 883px;" />
+<img src="sprints/sprint1.png" alt="Sprint 1" style="width: 1714px; height: 883px;" />
 **Sprint 2**
-<img src="Sprints/Sprint2.gif" alt="Sprint 2" style="width: 1714px; height: 883px;" />
+<img src="sprints/Sprint2.png" alt="Sprint 2" style="width: 1714px; height: 883px;" />
 **Sprint 3**
-<img src="Sprints/Sprint3.gif" alt="Sprint 3" style="width: 1714px; height: 883px;" />
-**Sprint 4**<img src="Sprints/BacklogDaSprint4.png" alt="Sprint 4" />
+<img src="sprints/Sprint3.png" alt="Sprint 3" style="width: 1714px; height: 883px;" />
+**Sprint 4**
+<img src="sprints/sprint4.png" alt="Sprint 4" style="width: 1714px; height: 883px;" />
