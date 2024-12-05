@@ -54,9 +54,10 @@ Por fim, a função exibe uma mensagem de sucesso, informando o número do novo 
 
 ## Evolução das sprints
 
-Abaixo é possível acompanhar a organização das sprints feita apartir do Projects do github.
+Abaixo é possível acompanhar a organização das sprints feita apartir do github Projects.
 
 **Backlog Geral**
+Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint.
 <img src="sprints/Backlog.png" alt="Backlog geral"/>
 **Sprint 1**
 <img src="sprints/Sprint 1.pn" alt="Sprint 1"/>
