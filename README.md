@@ -42,6 +42,12 @@ Responsável por buscar informações de um tripulante em uma lista previamente 
 - *Void salvarVooEmArquivo(Voo voos[], int qtdVoos)*: Responsável por salvar os dados de uma lista de voos em um arquivo de texto chamado voos.txt. Essa função grava as informações de cada voo no formato estruturado, permitindo que os dados sejam armazenados permanentemente para consulta ou processamento futuro.
 Recebe como parametros um vetor voos[] do tipo Voo, que contém os dados de todos os voos que devem ser salvos e um número inteiro chamado qtdVoos, que representa a quantidade de voos armazenados no vetor voos. Esse parâmetro é utilizado para controlar o número de registros que serão gravados no arquivo. A funcão testa a abertura do arquivo voos.txt no modo de apêndice. Caso o arquivo não possa ser aberto, é exibida uma mensagem de erro utilizando a função perror, e a execução é encerrada. Se o arquivo for aberto com sucesso, a função percorre o vetor voos e grava os dados de cada voo em uma nova linha no arquivo. Após o término da gravação, o arquivo é fechado para garantir a integridade dos dados.
 
+- *void darBaixaReserva(Reserva reservas[], int *qtdReservas, Voo voos[], int qtdVoos, Assento assentos[], int qtdAssentos)*: 
+Responsável por cancelar uma reserva previamente registrada.
+Recebe como parâmetros um vetor reservas[], que contém todas as reservas registradas, um ponteiro qtdReservas, que armazena a quantidade total de reservas registradas, um vetor voos[], que contém os dados de voos disponíveis, um inteiro qtdVoos, que indica o número total de voos no vetor, o vetor assentos[], utilizado para atualizar o status do assento reservado, e  inteiro qtdAssentos, que representa a quantidade total de assentos registrados. Ele solicita que o usuário insira o código da reserva que deseja cancelar. Em seguida, a função percorre o vetor de reservas em busca de uma correspondência com o código fornecido. Caso não encontre uma reserva com o código informado, exibe uma mensagem indicando que a reserva não foi encontrada e encerra sua execução.
+Se a reserva for localizada, o sistema exibe suas informações, como o código do voo, o código do passageiro e o número do assento. Após isso, o status do assento associado é alterado para disponível no vetor de assentos e no arquivo persistente de assentos. Além disso, a reserva é removida do vetor de reservas em memória e também do arquivo correspondente. 
+Por fim, a qtdReservas é decrementada, e uma mensagem de sucesso é exibida ao usuário.
+
 
 ## ARQUIVOS TXT
 
