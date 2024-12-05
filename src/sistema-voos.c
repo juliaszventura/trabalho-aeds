@@ -1,14 +1,23 @@
+/*
+Nome dos integrantes:
+Ana Luiza de Freitas Rodrigues
+Júlia de Souza Ventura
+Yuri Cardoso Viana
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
 
+// Definindo constantes para os limites máximos
 #define MAX_PASSAGEIROS 100
 #define MAX_TRIPULANTES 100
 #define MAX_VOOS 100
 #define MAX_ASSENTOS 100
 #define MAX_RESERVAS 100
 
+// Estrutura para armazenar informações de um passageiro
 typedef struct {
     int codigo;
     char nome[100];
@@ -18,6 +27,7 @@ typedef struct {
     int pontos_fidelidade;
 } Passageiro;
 
+// Estrutura para armazenar informações de um tripulante
 typedef struct {
     int codigo;
     char nome[50];
@@ -25,6 +35,7 @@ typedef struct {
     int cargo; //1 - Piloto, 2 - Copiloto, 3 - Comissário
 }Tripulacao;
 
+// Estrutura para armazenar informações de um voo
 typedef struct {
     int codigo_voo;
     char data_voo[20];
@@ -39,18 +50,21 @@ typedef struct {
     int status; //Ativo ou Inativo
 }Voo;
 
+// Estrutura para armazenar informações de um assento
 typedef struct {
     int numero_assento;
     int codigo_voo;
     int status; //Ocupado ou Livre
 }Assento;
 
+// Estrutura para armazenar informações de uma reserva
 typedef struct {
     int codigo_voo;
     int numero_assento;
     int codigo_passageiro;
 }Reserva;
 
+// Função para cadastrar um passageiro
 void cadastrarPassageiro(Passageiro passageiros[], int *qtdPassageiros) {
     Passageiro novoPassageiro;
     novoPassageiro.codigo = *qtdPassageiros + 1;
@@ -110,6 +124,7 @@ void testarCadastroCliente() {
 }
 */
 
+// Função para cadastrar um tripulante
 void cadastrarTripulacao(Tripulacao tripulantes[], int *qtdTripulantes) {
     Tripulacao novoTripulante;
     novoTripulante.codigo = *qtdTripulantes + 1;
@@ -171,6 +186,7 @@ void testarCadastroTripulacao() {
 }
 */
 
+// Função para cadastrar um voo
 void cadastrarVoo(Voo voos[], int *qtdVoos, Tripulacao tripulantes[], int qtdTripulantes) {
     Voo novoVoo;
     novoVoo.codigo_voo = *qtdVoos + 1;
@@ -222,6 +238,7 @@ void cadastrarVoo(Voo voos[], int *qtdVoos, Tripulacao tripulantes[], int qtdTri
     printf("\tVoo cadastrado com sucesso!\n\tCodigo do Voo: %d\n", novoVoo.codigo_voo);
 }
 
+// Função para cadastrar um assento
 void cadastrarAssento(Assento assentos[], int *qtdAssentos, Voo voos[], int qtdVoos) {
     Assento novoAssento;
     novoAssento.numero_assento = *qtdAssentos + 1;
@@ -254,6 +271,7 @@ void cadastrarAssento(Assento assentos[], int *qtdAssentos, Voo voos[], int qtdV
     printf("\tAssento cadastrado com sucesso!\n\tNúmero do Assento: %d\n", novoAssento.numero_assento);
 }
 
+// Função para pesquisar um passageiro
 void pesquisarPassageiro(Passageiro passageiros[], int qtdPassageiros) {
     int codigo;
     char nome[100];
@@ -293,6 +311,7 @@ void pesquisarPassageiro(Passageiro passageiros[], int qtdPassageiros) {
 
 }
 
+// Função para pesquisar um tripulante
 void pesquisarTripulante(Tripulacao Tripulacao[], int qtdTripulantes) {
     int codigo;
     char nome[100];
@@ -330,6 +349,7 @@ void pesquisarTripulante(Tripulacao Tripulacao[], int qtdTripulantes) {
 
 }
 
+// Função para salvar os voos em um arquivo
 void salvarVooEmArquivo(Voo voos[], int qtdVoos) {
     FILE *arquivo = fopen("voos.txt", "a");
     if (arquivo == NULL) {
@@ -420,6 +440,7 @@ void fazerReserva(Reserva reservas[], int *qtdReservas, Passageiro passageiros[]
 
 }
 
+// Função para dar baixa em uma reserva
 void darBaixaReserva(Reserva reservas[], int *qtdReservas, Voo voos[], int qtdVoos, Assento assentos[], int qtdAssentos) {
     int codigoReserva;
     printf("\n\t----------------------\n");
@@ -496,6 +517,7 @@ void darBaixaReserva(Reserva reservas[], int *qtdReservas, Voo voos[], int qtdVo
 
 }
 
+// Função para listar os voos de um passageiro
 void listarVooPassageiro(Voo voos[], int qtdVoos, Passageiro passageiros[], int qtdPassageiros) {
     int codigoPassageiro;
     printf("\n\t-------------------------\n");
@@ -538,6 +560,7 @@ void listarVooPassageiro(Voo voos[], int qtdVoos, Passageiro passageiros[], int 
     }
 }
 
+// Função para salvar os dados em um arquivo
 void salvarDados(Passageiro passageiro[], int qtdPassageiros, Tripulacao tripulantes[], int qtdTripulantes, Voo voos[], int qtdVoos, Assento assentos[], int qtdAssentos) {
     FILE *filePassageiros = fopen("passageiros.txt", "w");
     FILE *fileTripulantes = fopen("tripulantes.txt", "w");
@@ -572,6 +595,7 @@ void salvarDados(Passageiro passageiro[], int qtdPassageiros, Tripulacao tripula
 
 }
 
+// Função para carregar os dados de um arquivo
 void carregarDados(Passageiro passageiros[], int *qtdPassageiros, Tripulacao tripulantes[], int *qtdTripulantes, Voo voos[], int *qtdVoos, Assento assentos[], int *qtdAssentos) {
     FILE *filePassageiros = fopen("passageiros.txt", "r");
     FILE *fileTripulantes = fopen("tripulantes.txt", "r");
@@ -610,6 +634,7 @@ void carregarDados(Passageiro passageiros[], int *qtdPassageiros, Tripulacao tri
     fclose(fileAssentos);
 }
 
+// Função principal
 int main() {
     Passageiro passageiros[MAX_PASSAGEIROS];
     Tripulacao tripulantes[MAX_TRIPULANTES];
