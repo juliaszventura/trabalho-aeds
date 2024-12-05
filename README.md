@@ -82,7 +82,7 @@ Apresentação do backlog geral, divisão das funções e divisão das tarefas p
 **Sprint 4**
 <img src="sprints/Sprint 4.png" alt="Sprint 4"/>
 
-## Relatório de testes.
+## Relatório de testes
 
 Representação dos relatórios de testes em tabelas, onde é possível ver as entradas, classes válidas, classes inválidas e os resultados esperados.
 
