@@ -58,12 +58,17 @@ Abaixo é possível acompanhar a organização das sprints feita apartir do gith
 
 **Backlog Geral** <br/>
 Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint.
+<br/>
 <img src="sprints/Backlog.png" alt="Backlog geral"/>
+<br/>
 **Sprint 1**
 <img src="sprints/Sprint 1.png" alt="Sprint 1"/>
+<br/>
 **Sprint 2**
 <img src="sprints/Sprint 2.png" alt="Sprint 2"/>
+<br/>
 **Sprint 3**
 <img src="sprints/Sprint 3.png" alt="Sprint 3"/>
+<br/>
 **Sprint 4**
 <img src="sprints/Sprint 4.png" alt="Sprint 4"/>
