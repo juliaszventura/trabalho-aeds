@@ -105,7 +105,7 @@ Tenta abrir os arquivos de texto passageiros.txt, tripulantes.txt, voos.txt e as
 Acompanhamento da organização das sprints feita apartir do github Projects.
 
 **Backlog Geral** <br/>
-Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint, organizadas utilizando labels para facilitar a identificação e categorização das tarefas. 
+- Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint, organizadas utilizando labels para facilitar a identificação e categorização das tarefas. 
 <br/>
 <img src="sprints/backlog2.png" alt="Backlog geral"/>
 **Sprint 1**
