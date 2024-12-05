@@ -51,6 +51,19 @@ Por fim, a função exibe uma mensagem de sucesso, informando o número do novo 
 
 * Possivel escolher e navegar pelas diferentes interfaces e funções da aplicação.
 
+## ARQUIVOS TXT
+
+* Os arquivos txt possuem a seguinte lógica em sua escrita:
+* Passageiros: Id, Nome, Endereço, Telefone.
+* Tripulantes: Id, Nome, Telefone, Cargo.
+* Voos: Id, Data do voo, Hora do voo, Origem, Destino, Código do avião, Tarifa, Código do piloto, Código do copiloto, Códido do comissário, Status do voo.
+* Assentos: Código do assento, Código do voo, Status do assento.
+
+## Métodos Ágeis 
+
+* **Scrum**: Utilizamos o framework Scrum para organizar o projeto em ciclos de aproximadamente 1 dia. Planejávamos cada ciclo (sprint), definindo seu backlog correspondente. Realizávamos daily (meetings) com duração média de 5 a 8 minutos. Ao término de cada sprint, avaliávamos o que havia sido concluído e analisávamos nosso método de trabalho para identificar oportunidades de melhoria no processo.
+*  **Kanban**: Utilizamos o github Projects para fazer o acompanhamento visual do projeto através do framework Kanban onde organizamos os requisitos, o backlog do produto, backlog da sprint e separamos as tarefas da sprint no quadro *To-do, In Progress, Done*.
+
 
 ## Evolução das sprints
 
@@ -60,15 +73,13 @@ Abaixo é possível acompanhar a organização das sprints feita apartir do gith
 Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint.
 <br/>
 <img src="sprints/Backlog.png" alt="Backlog geral"/>
-<br/>
 **Sprint 1**
 <img src="sprints/Sprint 1.png" alt="Sprint 1"/>
-<br/>
 **Sprint 2**
 <img src="sprints/Sprint 2.png" alt="Sprint 2"/>
-<br/>
 **Sprint 3**
 <img src="sprints/Sprint 3.png" alt="Sprint 3"/>
-<br/>
 **Sprint 4**
 <img src="sprints/Sprint 4.png" alt="Sprint 4"/>
+
+
