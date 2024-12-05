@@ -32,6 +32,14 @@ de tripulação composta por pilotos, copilotos e comissários. Este projeto é 
 Em seguida, a função verifica se o código do voo informado corresponde a algum voo presente no vetor de voos. Caso o voo não seja encontrado, é exibida uma mensagem de erro e o cadastro do assento é interrompido, com a quantidade de assentos sendo ajustada para -1, indicando que ocorreu um erro. Se o voo for encontrado, a função cria um novo assento, atribuindo-lhe o número baseado na quantidade de assentos já cadastrados. O novo assento é então adicionado ao vetor de assentos e a quantidade de assentos qtdAssentos é incrementada.
 Por fim, a função exibe uma mensagem de sucesso, informando o número do novo assento cadastrado ao usuário.
 
+## ARQUIVOS TXT
+
+* Os arquivos txt possuem a seguinte lógica em sua escrita:
+* Passageiros: Id, Nome, Endereço, Telefone.
+* Tripulantes: Id, Nome, Telefone, Cargo.
+* Voos: Id, Data do voo, Hora do voo, Origem, Destino, Código do avião, Tarifa, Código do piloto, Código do copiloto, Códido do comissário, Status do voo.
+* Assentos: Código do assento, Código do voo, Status do assento.
+
 
 ## Menu
 
@@ -51,13 +59,6 @@ Por fim, a função exibe uma mensagem de sucesso, informando o número do novo 
 
 * Possivel escolher e navegar pelas diferentes interfaces e funções da aplicação.
 
-## ARQUIVOS TXT
-
-* Os arquivos txt possuem a seguinte lógica em sua escrita:
-* Passageiros: Id, Nome, Endereço, Telefone.
-* Tripulantes: Id, Nome, Telefone, Cargo.
-* Voos: Id, Data do voo, Hora do voo, Origem, Destino, Código do avião, Tarifa, Código do piloto, Código do copiloto, Códido do comissário, Status do voo.
-* Assentos: Código do assento, Código do voo, Status do assento.
 
 ## Métodos Ágeis 
 
@@ -86,7 +87,7 @@ Apresentação do backlog geral, divisão das funções e divisão das tarefas p
 
 Representação dos relatórios de testes em tabelas, onde é possível ver as entradas, classes válidas, classes inválidas e os resultados esperados.
 
-<div style="text-align: center;">
+<div style="text-align: center; size: small">
     <img src="tables/cadastro p.png" alt="Teste Passageiro"/>
     <img src="tables/cadastro t.png" alt="Teste Tripulacao"/>
     <img src="tables/cadastro voo.png" alt="Teste Voo"/>
