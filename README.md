@@ -62,12 +62,12 @@ Por fim, a função exibe uma mensagem de sucesso, informando o número do novo 
 ## Métodos Ágeis 
 
 * **Scrum**: Utilizamos o framework Scrum para organizar o projeto em ciclos de aproximadamente 1 dia. Planejávamos cada ciclo (sprint), definindo seu backlog correspondente. Realizávamos daily (meetings) com duração média de 5 a 8 minutos. Ao término de cada sprint, avaliávamos o que havia sido concluído e analisávamos nosso método de trabalho para identificar oportunidades de melhoria no processo.
-*  **Kanban**: Utilizamos o github Projects para fazer o acompanhamento visual do projeto através do framework Kanban, onde organizamos os requisitos, o backlog do produto, backlog da sprint e separamos as tarefas da sprint no quadro *To-do, In Progress, Done*.
+* **Kanban**: Utilizamos o github Projects para fazer o acompanhamento visual do projeto através do framework Kanban, onde organizamos os requisitos, o backlog do produto, backlog da sprint e separamos as tarefas da sprint no quadro *To-do, In Progress, Done*.
 
 
 ## Evolução das sprints
 
-Abaixo é possível acompanhar a organização das sprints feita apartir do github Projects.
+Acompanhamento da organização das sprints feita apartir do github Projects.
 
 **Backlog Geral** <br/>
 Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint.
@@ -81,5 +81,15 @@ Apresentação do backlog geral, divisão das funções e divisão das tarefas p
 <img src="sprints/Sprint 3.png" alt="Sprint 3"/>
 **Sprint 4**
 <img src="sprints/Sprint 4.png" alt="Sprint 4"/>
+
+## Relatório de testes.
+
+Representação dos relatórios de testes em tabelas, onde é possível ver as entradas, classes válidas, classes inválidas e os resultados esperados.
+
+<div style="text-align: center;">
+    <img src="ExecucaoTeste/CaoDeTeste1.png" alt="Teste 1"/>
+    <img src="ExecucaoTeste/CasoDeTeste2.png" alt="Teste 2"/>
+    <img src="ExecucaoTeste/CasoDeTeste3.png" alt="Teste 3"/>
+</div>
 
 
