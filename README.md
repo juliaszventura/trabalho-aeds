@@ -87,7 +87,7 @@ Apresentação do backlog geral, divisão das funções e divisão das tarefas p
 
 Representação dos relatórios de testes em tabelas, onde é possível ver as entradas, classes válidas, classes inválidas e os resultados esperados.
 
-<div style="text-align: center; display: flex;">
+<div style="text-align: center; display: flex; width: 714px; height: 83px;">
     <img src="tables/cadastro p.png" alt="Teste Passageiro"/>
     <img src="tables/cadastro t.png" alt="Teste Tripulacao"/>
     <img src="tables/cadastro voo.png" alt="Teste Voo"/>
