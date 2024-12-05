@@ -137,4 +137,4 @@ Representação dos relatórios de testes em tabelas, onde é possível ver as e
 
 
 ## Vídeo de Apresentação do projeto
-<a href="video/video-sistema-voo.mp4"> Assista aqui</a> o vídeo do projeto.<br>
+<a href="video"> Assista aqui</a> o vídeo do projeto.<br>
