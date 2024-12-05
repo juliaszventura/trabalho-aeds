@@ -65,6 +65,9 @@ Inicialmente, tenta abrir quatro arquivos para escrita: passageiros.txt, tripula
 
 Ao final, a função fecha todos os arquivos abertos, garantindo que os dados sejam salvos corretamente.
 
+- **void carregarDados(Passageiro passageiros[], int *qtdPassageiros, Tripulacao tripulantes[], int *qtdTripulantes, Voo voos[], int *qtdVoos, Assento assentos[], int *qtdAssentos)**: Carrega os dados armazenados em arquivos de texto para as estruturas do programa. Ela é responsável por ler os dados dos passageiros, tripulantes, voos e assentos de arquivos de texto e armazená-los nos vetores correspondentes, além de atualizar as quantidades de passageiros, tripulantes, voos e assentos.
+Tenta abrir os arquivos de texto passageiros.txt, tripulantes.txt, voos.txt e assentos.txt no modo de leitura. Se qualquer um desses arquivos não puder ser aberto, a função imprime uma mensagem de erro e retorna sem carregar os dados. Caso os arquivos sejam abertos com sucesso, a função inicializa as variáveis de quantidade (*qtdPassageiros, *qtdTripulantes, *qtdVoos, *qtdAssentos) como 0 e, em seguida, começa a ler os dados de cada arquivo usando o fscanf. Para cada arquivo, os dados são lidos linha por linha, e as informações são armazenadas nas estruturas apropriadas (passageiros, tripulantes, voos e assentos). A função aumenta a quantidade de elementos no vetor correspondente a cada vez que um novo registro é lido. Ao final da execução, os dados são carregados para os vetores de passageiros, tripulantes, voos e assentos, e as quantidades correspondentes são atualizadas. Todos os arquivos são fechados após a leitura.
+
 ## ARQUIVOS TXT
 
 * Os arquivos txt possuem a seguinte lógica em sua escrita:
