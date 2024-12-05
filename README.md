@@ -54,6 +54,11 @@ Recebe como parâmetros um vetor reservas[], que contém todas as reservas regis
 Se a reserva for localizada, o sistema exibe suas informações, como o código do voo, o código do passageiro e o número do assento. Após isso, o status do assento associado é alterado para disponível no vetor de assentos e no arquivo persistente de assentos. Além disso, a reserva é removida do vetor de reservas em memória e também do arquivo correspondente. 
 Por fim, a qtdReservas é decrementada, e uma mensagem de sucesso é exibida ao usuário.
 
+- **void listarVooPassageiro(Voo voos[], int qtdVoos, Passageiro passageiros[], int qtdPassageiros)**:
+
+Exibe os detalhes de todos os voos registrados no sistema para um passageiro específico, identificado pelo seu código.  Recebe como parametros o vetor voos[], que contém as informações de todos os voos registrados no sistema, o inteiro qtdVoos, que representa a quantidade total de voos registrados no vetor, o vetor passageiros[], que armazena os dados de todos os passageiros cadastrados no sistema e o inteiro qtdPassageiros, que indica a quantidade total de passageiros no vetor. 
+Solicita ao usuário o código do passageiro e realiza uma busca no vetor de passageiros para verificar se o código fornecido corresponde a um passageiro existente. Caso o código não seja encontrado, a função exibe uma mensagem informando que o passageiro não foi localizado e encerra sua execução. Se o código do passageiro for válido, a função percorre o vetor de voos e exibe os detalhes de cada voo registrado no sistema. 
+
 
 ## ARQUIVOS TXT
 
