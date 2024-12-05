@@ -126,13 +126,13 @@ Acompanhamento da organização das sprints feita apartir do github Projects.
 Representação dos relatórios de testes em tabelas, onde é possível ver as entradas, classes válidas, classes inválidas e os resultados esperados.
 
 <div style="text-align: center; display: flex;">
-    <img src="tables/cadastro p.png" alt="Teste Passageiro" width="300"/>
-    <img src="tables/cadastro t.png" alt="Teste Tripulacao"/>
-    <img src="tables/cadastro voo.png" alt="Teste Voo"/>
-    <img src="tables/cadastro a.png" alt="Teste Assento"/>
-    <img src="tables/reserva 1.png" alt="Teste Reserva"/>
-    <img src="tables/reserva 2.png" alt="Teste Reserva 2"/>
-    <img src="tables/menu.png" alt="Teste Menu"/>
+    <img src="tables/cadastro p.png" alt="Teste Passageiro" width="450"/>
+    <img src="tables/cadastro t.png" alt="Teste Tripulacao" width="450"/>
+    <img src="tables/cadastro voo.png" alt="Teste Voo" width="450"/>
+    <img src="tables/cadastro a.png" alt="Teste Assento" width="450"/>
+    <img src="tables/reserva 1.png" alt="Teste Reserva" width="450"/>
+    <img src="tables/reserva 2.png" alt="Teste Reserva 2" width="450"/>
+    <img src="tables/menu.png" alt="Teste Menu" width="450"/>
 </div>
 
 
