@@ -62,7 +62,7 @@ Por fim, a função exibe uma mensagem de sucesso, informando o número do novo 
 ## Métodos Ágeis 
 
 * **Scrum**: Utilizamos o framework Scrum para organizar o projeto em ciclos de aproximadamente 1 dia. Planejávamos cada ciclo (sprint), definindo seu backlog correspondente. Realizávamos daily (meetings) com duração média de 5 a 8 minutos. Ao término de cada sprint, avaliávamos o que havia sido concluído e analisávamos nosso método de trabalho para identificar oportunidades de melhoria no processo.
-*  **Kanban**: Utilizamos o github Projects para fazer o acompanhamento visual do projeto através do framework Kanban onde organizamos os requisitos, o backlog do produto, backlog da sprint e separamos as tarefas da sprint no quadro *To-do, In Progress, Done*.
+*  **Kanban**: Utilizamos o github Projects para fazer o acompanhamento visual do projeto através do framework Kanban, onde organizamos os requisitos, o backlog do produto, backlog da sprint e separamos as tarefas da sprint no quadro *To-do, In Progress, Done*.
 
 
 ## Evolução das sprints
