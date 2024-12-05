@@ -116,4 +116,4 @@ Representação dos relatórios de testes em tabelas, onde é possível ver as e
 
 
 ## Vídeo de Apresentação do projeto
-<a href="video/TrabalhoAEDs-VIDEO.mp4"> Assista aqui </a> <br>
+<a href="video/TrabalhoAEDs-VIDEO.mp4"> Assista aqui </a>o vídeo do projeto.<br>
