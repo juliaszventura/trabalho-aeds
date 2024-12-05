@@ -108,13 +108,13 @@ Acompanhamento da organização das sprints feita apartir do github Projects.
 - Apresentação do backlog geral, divisão das funções e divisão das tarefas para cada integrante do grupo e em cada sprint, organizadas utilizando labels para facilitar a identificação e categorização das tarefas. 
 <br/>
 <img src="sprints/backlog2.png" alt="Backlog geral"/>
-**Sprint 1** 
+ **Sprint 1** 
 <img src="sprints/Sprint 1.png" alt="Sprint 1"/>
-**Sprint 2** 
+ **Sprint 2** 
 <img src="sprints/Sprint 2.png" alt="Sprint 2"/>
-- Sprint 3
+ **Sprint 3**
 <img src="sprints/Sprint 3.png" alt="Sprint 3"/>
-**Sprint 4**
+ **Sprint 4**
 <img src="sprints/Sprint 4.png" alt="Sprint 4"/>
 
 ## Relatório de testes
