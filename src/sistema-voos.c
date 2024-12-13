@@ -86,43 +86,39 @@ void cadastrarPassageiro(Passageiro passageiros[], int *qtdPassageiros) {
     printf("\tPassageiro cadastrado com sucesso!\n\tCodigo do Passageiro: %d\n", novoPassageiro.codigo);
 }
 
-/*
-void testarCadastroCliente() {
+// Função para testar o cadastro de um passageiro
+void testarCadastrarPassageiro() {
     Passageiro passageiros[MAX_PASSAGEIROS];
     int qtdPassageiros = 0;
 
-    FILE *arquivo = freopen("cadastroPassageiro.txt", "r", stdin);
-    if (arquivo == NULL) {
-        perror("Erro ao abrir arquivo de passageiro teste\n");
-        exit(1);
-    }
+    Passageiro novoPassageiro;
+    novoPassageiro.codigo = qtdPassageiros + 1;
+    strcpy(novoPassageiro.nome, "Passageiro teste");
+    strcpy(novoPassageiro.endereco, "Rua teste");
+    strcpy(novoPassageiro.telefone, "123456789");
+    novoPassageiro.fidelidade = 1;
 
-    for (int i = 0; i < MAX_PASSAGEIROS; i++) {
-        cadastrarPassageiro(passageiros, &qtdPassageiros);
-    }
+    passageiros[qtdPassageiros] = novoPassageiro;
+    qtdPassageiros++;
 
-    assert(qtdPassageiros == MAX_PASSAGEIROS);
+    assert(passageiros[0].codigo == 1);
+    assert(strcmp(passageiros[0].nome, "Passageiro teste") == 0);
+    assert(strcmp(passageiros[0].endereco, "Rua teste") == 0);
+    assert(strcmp(passageiros[0].telefone, "123456789") == 0);
+    assert(passageiros[0].fidelidade == 1);
 
-    printf("Passageiros cadastrados com sucesso!\n");
-    printf("\n\n-- Lista de Passageiros --\n");
-    for (int i = 0; i < qtdPassageiros; i++) {
-        printf("Codigo: %d\n", passageiros[i].codigo);
-        printf("Nome: %s\n", passageiros[i].nome);
-        printf("Endereco: %s\n", passageiros[i].endereco);
-        printf("Telefone: %s\n", passageiros[i].telefone);
-        printf("Fidelidade: %d\n", passageiros[i].fidelidade);
-        printf("\n");
+    printf("\tTeste de cadastro de passageiro passou!\n");
 
-        assert(passageiros[i].codigo == i + 1);
-        assert(strcmp(passageiros[i].nome, "Passageiro teste") == 0);
-        assert(strcmp(passageiros[i].endereco, "Endereco teste") == 0);
-        assert(strcmp(passageiros[i].telefone, "31999999999") == 0);
-        assert(passageiros[i].fidelidade == 1);
-    }
-    fclose(arquivo);
+    printf("\t------------------------------\n");
+    printf("\tDados do passageiro cadastrado:\n");
+    printf("\tCódigo: %d\n", passageiros[0].codigo);
+    printf("\tNome: %s\n", passageiros[0].nome);
+    printf("\tEndereço: %s\n", passageiros[0].endereco);
+    printf("\tTelefone: %s\n", passageiros[0].telefone);
+    printf("\tFidelidade: %d\n", passageiros[0].fidelidade);
+    printf("\t------------------------------\n");
     
 }
-*/
 
 // Função para cadastrar um tripulante
 void cadastrarTripulacao(Tripulacao tripulantes[], int *qtdTripulantes) {
@@ -150,41 +146,37 @@ void cadastrarTripulacao(Tripulacao tripulantes[], int *qtdTripulantes) {
     printf("\tTripulante cadastrado com sucesso!\n\tCodigo do Tripulante: %d\n", novoTripulante.codigo);
 }
 
-/*
-void testarCadastroTripulacao() {
+// Função para testar o cadastro de um tripulante
+void testarCadastrarTripulante() {
     Tripulacao tripulantes[MAX_TRIPULANTES];
     int qtdTripulantes = 0;
 
-    FILE *arquivo;
-    arquivo = fopen("cadastroTripulante.txt", "r");
-    if (arquivo == NULL) {
-        perror("Erro ao abrir arquivo de funcionario teste\n");
-        return;
-    }
+    Tripulacao novoTripulante;
+    novoTripulante.codigo = qtdTripulantes + 1;
+    strcpy(novoTripulante.nome, "Tripulante teste");
+    strcpy(novoTripulante.telefone, "123456789");
+    novoTripulante.cargo = 1;
 
-    while (qtdTripulantes < MAX_TRIPULANTES) {
-        Tripulacao novoTripulante;
+    tripulantes[qtdTripulantes] = novoTripulante;
+    qtdTripulantes++;
 
-        if (fscanf(arquivo, "%d %[^\n] %[^\n] %d", &novoTripulante.codigo, novoTripulante.nome, novoTripulante.telefone, &novoTripulante.cargo) != 4) {
-            printf("\tErro ao ler dados do arquivo\n");
-            break;
-        }
+    assert(tripulantes[0].codigo == 1);
+    assert(strcmp(tripulantes[0].nome, "Tripulante teste") == 0);
+    assert(strcmp(tripulantes[0].telefone, "123456789") == 0);
+    assert(tripulantes[0].cargo == 1);
 
-        if (!((novoTripulante.cargo) == 1 || (novoTripulante.cargo) == 2 || (novoTripulante.cargo) == 3)) {
-            printf("\tCargo inválido! Insira novamente.\n");
-            continue;
-        }
+    printf("\tTeste de cadastro de tripulante passou!\n");
 
-        novoTripulante.codigo = qtdTripulantes + 1;
-        tripulantes[qtdTripulantes] = novoTripulante;
-        qtdTripulantes++;
-
-        printf("\tTripulante cadastrado com sucesso a partir do arquivo!\n\tCodigo do Tripulante: %d\n", novoTripulante.codigo);
-    }
-    fclose(arquivo);
-
+    printf("\t------------------------------\n");
+    printf("\tDados do tripulante cadastrado:\n");
+    printf("\tCódigo: %d\n", tripulantes[0].codigo);
+    printf("\tNome: %s\n", tripulantes[0].nome);
+    printf("\tTelefone: %s\n", tripulantes[0].telefone);
+    printf("\tCargo: %d\n", tripulantes[0].cargo);
+    printf("\t------------------------------\n");
+    
 }
-*/
+
 
 // Função para cadastrar um voo
 void cadastrarVoo(Voo voos[], int *qtdVoos, Tripulacao tripulantes[], int qtdTripulantes) {
@@ -238,6 +230,58 @@ void cadastrarVoo(Voo voos[], int *qtdVoos, Tripulacao tripulantes[], int qtdTri
     printf("\tVoo cadastrado com sucesso!\n\tCodigo do Voo: %d\n", novoVoo.codigo_voo);
 }
 
+// Função para testar o cadastro de um voo
+void testarCadastrarVoo() {
+    Voo voos[MAX_VOOS];
+    int qtdVoos = 0;
+
+    Voo novoVoo;
+    novoVoo.codigo_voo = qtdVoos + 1;
+    strcpy(novoVoo.data_voo, "01/01/2021");
+    strcpy(novoVoo.hora_voo, "12:00");
+    strcpy(novoVoo.origem, "São Paulo");
+    strcpy(novoVoo.destino, "Rio de Janeiro");
+    novoVoo.codigo_aviao = 1;
+    novoVoo.tarifa = 100;
+    novoVoo.codigo_piloto = 1;
+    novoVoo.codigo_copiloto = 2;
+    novoVoo.codigo_comissario = 3;
+    novoVoo.status = 1;
+
+    voos[qtdVoos] = novoVoo;
+    qtdVoos++;
+
+    assert(voos[0].codigo_voo == 1);
+    assert(strcmp(voos[0].data_voo, "01/01/2021") == 0);
+    assert(strcmp(voos[0].hora_voo, "12:00") == 0);
+    assert(strcmp(voos[0].origem, "São Paulo") == 0);
+    assert(strcmp(voos[0].destino, "Rio de Janeiro") == 0);
+    assert(voos[0].codigo_aviao == 1);
+    assert(voos[0].tarifa == 100);
+    assert(voos[0].codigo_piloto == 1);
+    assert(voos[0].codigo_copiloto == 2);
+    assert(voos[0].codigo_comissario == 3);
+    assert(voos[0].status == 1);
+
+    printf("\tTeste de cadastro de voo passou!\n");
+
+    printf("\t------------------------------\n");
+    printf("\tDados do voo cadastrado:\n");
+    printf("\tCódigo: %d\n", voos[0].codigo_voo);
+    printf("\tData: %s\n", voos[0].data_voo);
+    printf("\tHora: %s\n", voos[0].hora_voo);
+    printf("\tOrigem: %s\n", voos[0].origem);
+    printf("\tDestino: %s\n", voos[0].destino);
+    printf("\tCódigo do Avião: %d\n", voos[0].codigo_aviao);
+    printf("\tTarifa: %d\n", voos[0].tarifa);
+    printf("\tCódigo do Piloto: %d\n", voos[0].codigo_piloto);
+    printf("\tCódigo do Copiloto: %d\n", voos[0].codigo_copiloto);
+    printf("\tCódigo do Comissário: %d\n", voos[0].codigo_comissario);
+    printf("\tStatus: %d\n", voos[0].status);
+    printf("\t------------------------------\n");
+
+}
+
 // Função para cadastrar um assento
 void cadastrarAssento(Assento assentos[], int *qtdAssentos, Voo voos[], int qtdVoos) {
     Assento novoAssento;
@@ -269,6 +313,34 @@ void cadastrarAssento(Assento assentos[], int *qtdAssentos, Voo voos[], int qtdV
     (*qtdAssentos)++;
 
     printf("\tAssento cadastrado com sucesso!\n\tNúmero do Assento: %d\n", novoAssento.numero_assento);
+}
+
+// Função para testar o cadastro de um assento
+void testarCadastrarAssento() {
+    Assento assentos[MAX_ASSENTOS];
+    int qtdAssentos = 0;
+
+    Assento novoAssento;
+    novoAssento.numero_assento = qtdAssentos + 1;
+    novoAssento.codigo_voo = 1;
+    novoAssento.status = 1;
+
+    assentos[qtdAssentos] = novoAssento;
+    qtdAssentos++;
+
+    assert(assentos[0].numero_assento == 1);
+    assert(assentos[0].codigo_voo == 1);
+    assert(assentos[0].status == 1);
+
+    printf("\tTeste de cadastro de assento passou!\n");
+
+    printf("\t------------------------------\n");
+    printf("\tDados do assento cadastrado:\n");
+    printf("\tNúmero do Assento: %d\n", assentos[0].numero_assento);
+    printf("\tCódigo do Voo: %d\n", assentos[0].codigo_voo);
+    printf("\tStatus: %d\n", assentos[0].status);
+    printf("\t------------------------------\n");
+
 }
 
 // Função para pesquisar um passageiro
@@ -666,6 +738,7 @@ int main() {
         printf("\t7 - Fazer Reserva\n");
         printf("\t8 - Dar baixa em Reserva\n");
         printf("\t9 - Listar Voos do Passageiro\n");
+        printf("\t10- Aba de testes\n");
         printf("\t0 - Salvar e Sair\n");
         
         while (scanf("%d", &opcao) != 1) {
@@ -707,6 +780,33 @@ int main() {
             case 9:
                 listarVooPassageiro(voos, qtdVoos, passageiros, qtdPassageiros);
                 break;
+            case 10:
+                printf("\t----------------------\n");
+                printf("\tTestes\n");
+                printf("\t----------------------\n");
+                printf("\t1 - Testar cadastro de passageiro\n");
+                printf("\t2 - Testar cadastro de tripulante\n");
+                printf("\t3 - Testar cadastro de voo\n");
+                printf("\t4 - Testar cadastro de assento\n");
+
+                scanf("%d", &opcaoTeste);
+                if (opcaoTeste == 1) {
+                    testarCadastrarPassageiro();
+                } 
+                else if (opcaoTeste == 2) {
+                    testarCadastrarTripulante();
+                }
+                else if (opcaoTeste == 3) {
+                    testarCadastrarVoo();
+                }
+                else if (opcaoTeste == 4) {
+                    testarCadastrarAssento();
+                }
+                else {
+                    printf("\tOpção inválida! Insira novamente.\n");
+                }
+                break;
+
             case 0:
                 salvarDados(passageiros, qtdPassageiros, tripulantes, qtdTripulantes, voos, qtdVoos, assentos, qtdAssentos);
                 break;
